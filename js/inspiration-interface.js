@@ -17,6 +17,9 @@ function error() {
 }
 
 $(document).ready(function() {
-  imgur.getImageByKeyword("dog", showRandomImage, error);
-  quote.getQuote(showRandomQuote, error);
+  $("button").click(function() {
+
+    imgur.getImageByKeyword("dog", showRandomImage, error);
+    quote.getQuote(showRandomQuote, error);
+  });
 });
