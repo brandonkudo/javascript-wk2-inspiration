@@ -19,7 +19,7 @@ function error() {
 $(document).ready(function() {
   $("button").click(function() {
 
-    imgur.getImageByKeyword("dog", showRandomImage, error);
+    imgur.getImageByKeyword("meme", showRandomImage, error);
     quote.getQuote(showRandomQuote, error);
   });
 });
